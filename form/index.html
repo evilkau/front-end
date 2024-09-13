@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #333d3d;
+        }
+        .contact-form {
+            background-color: #c5c5c5;
+            padding: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            width: 400px;
+        }
+        .contact-form h2 {
+            margin-bottom: 15px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 20px;
+            background-color: #000000;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <h2>Contato</h2>
+        <form action="https://example.com/submit" method="post">
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <input type="text" name="instagram" placeholder="Seu Instagram" required>
+            <input type="text" name="facebook" placeholder="Seu Facebook" required>
+            <textarea name="message" rows="4" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
